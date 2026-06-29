@@ -1,3 +1,5 @@
+[![DOI](https://img.shields.io/badge/DOI-10.82901%2Fnemar.on006593-blue)](https://doi.org/10.82901/nemar.on006593)
+
 # Multimodal Sensor Fusion for EEG-Based BCI Typing Systems
 
 ## Dataset Overview
