@@ -1,9 +1,9 @@
 {
   "version": "2.0",
-  "dataset_id": "on006593",
-  "source": "openneuro",
-  "source_id": "ds006593",
+  "pipeline_stage": "validated",
   "title": "cBCI Matrix Multimodal Dataset",
+  "license": "CC0",
+  "dataset_type": "raw",
   "authors": {
     "Basak Celik": {},
     "Tab Memmott": {},
@@ -11,27 +11,76 @@
     "Srikar Ananthoju": {},
     "Deniz Erdogmus": {}
   },
-  "license": "CC0",
-  "dataset_type": "raw",
   "related_identifiers": [
     {
       "identifier": "10.18112/openneuro.ds006593.v1.0.0",
       "identifier_type": "DOI",
-      "relation_type": "IsIdenticalTo"
+      "relation_type": "IsDerivedFrom"
+    },
+    {
+      "identifier": "https://github.com/nemarDatasets/on006593",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "https://nemar.org/dataset/on006593",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "10.3217/978-3-99161-050-2-196",
+      "identifier_type": "DOI",
+      "relation_type": "IsDescribedBy"
     }
-  ],
-  "pipeline_stage": "seeded",
-  "bids_version": "1.7.0",
-  "recording_modality": [
-    "eeg"
-  ],
-  "datatypes": [
-    "eeg"
   ],
   "funding_references": [
     {
-      "funder_name": "This research was funded by the National Institutes of Health (DC009834)."
+      "funder_name": "National Institutes of Health",
+      "award_number": "DC009834"
     }
   ],
-  "acknowledgements": "These studies were approved by the Northeastern IRB #10-05-2022. The studies were conducted in accordance with the local legislation and institutional requirements. The participants provided their written informed consent to participate in this study. We would like to thank Emma Sombers and Julia Gangemi for their assistance with data collection and preprocessing. We thank the Consortium of Accessible Multimodal Brain-Body Interfaces (CAMBI) for their insight and guidance over the course of the experiment. Additionally, we would like to thank all the participants for their time and effort in contributing to this research."
+  "resource_type_general": "Dataset",
+  "modalities": [
+    "eeg"
+  ],
+  "resource_type_specific": "EEG Dataset",
+  "sizes": [
+    "644.8 MB (86 files)"
+  ],
+  "formats": [
+    ".eeg",
+    ".json",
+    ".md",
+    ".png",
+    ".tsv",
+    ".vhdr",
+    ".vmrk",
+    ".yml"
+  ],
+  "description": "This multimodal dataset comprises simultaneous EEG and eye-tracking recordings from 21 healthy participants performing a matrix-based brain-computer interface spelling task. EEG data were acquired using a 24-channel dry electrode system at 300 Hz, while eye movements were recorded at 60 Hz using a portable eye tracker. The dataset includes calibration and copy-spelling task data with event markers for target and non-target stimulus presentations, providing a resource for investigating sensor fusion approaches in EEG-based BCI typing systems.",
+  "methods_description": "EEG data were collected using a DSI-24 dry electrode cap (Wearable Sensing) at 300 Hz sampling rate with a bandwidth of 0.003–150 Hz from 13 electrode locations with linked-ear reference. Eye-tracking data were acquired using a Tobii Pro Nano eye tracker at 60 Hz. Participants performed a single-character-presentation matrix paradigm with 100 calibration inquiries (10 letters each at 4 Hz presentation rate). Stimuli were presented in white on black background with red fixation crosses. Timing fidelity was verified using the Matrix Time Test Task with photodiode validation (±10 ms tolerance).",
+  "keywords": [
+    {
+      "term": "EEG"
+    },
+    {
+      "term": "brain-computer interfaces"
+    },
+    {
+      "term": "eye tracking"
+    },
+    {
+      "term": "multimodal sensor fusion"
+    },
+    {
+      "term": "P300"
+    },
+    {
+      "term": "spelling task"
+    },
+    {
+      "term": "motor imagery"
+    }
+  ],
+  "source_hash": "f0fb882efb5e82b60b81f1d8624f7d3dd205c772ec0dedf7c993965521249e7b"
 }
