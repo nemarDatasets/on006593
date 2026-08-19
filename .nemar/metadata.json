@@ -2,6 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "cBCI Matrix Multimodal Dataset",
+  "description": "This dataset comprises simultaneous EEG and eye-tracking recordings from 21 participants performing a matrix-based brain-computer interface (BCI) typing task using a single-character-presentation paradigm. Data were collected at Northeastern University in 2023 using the BciPy software platform, including calibration and copy-spelling sessions with event markers for target and non-target stimuli. The dataset supports research on multimodal sensor fusion for EEG-based BCI typing systems.",
+  "methods_description": "EEG data were collected using a DSI-24 dry electrode cap (Wearable Sensing) at 300 Hz sampling rate, with electrodes at Fp1/2, Fz, F3/4, F7/8, Cz, C3/4, T7/T8, T3/T4, Pz, P3/P4, P7/P8, T5/T6, O1/2, referenced to linked ears (A1/A2). Eye-tracking data were collected using a Tobii Pro Nano at 60 Hz. The matrix paradigm and data acquisition were managed with BciPy software. Calibration tasks presented letters at 4 Hz across 100 inquiries of 10 letters each (1 target, 9 non-target), with timing verified via a photodiode and Matrix Time Test Task.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -11,6 +13,29 @@
     "Srikar Ananthoju": {},
     "Deniz Erdogmus": {}
   },
+  "keywords": [
+    {
+      "term": "EEG"
+    },
+    {
+      "term": "Eye-Tracking"
+    },
+    {
+      "term": "Brain-Computer Interface"
+    },
+    {
+      "term": "BCI typing"
+    },
+    {
+      "term": "sensor fusion"
+    },
+    {
+      "term": "matrix paradigm"
+    },
+    {
+      "term": "single-character-presentation"
+    }
+  ],
   "related_identifiers": [
     {
       "identifier": "10.18112/openneuro.ds006593.v1.0.0",
@@ -40,10 +65,10 @@
     }
   ],
   "resource_type_general": "Dataset",
+  "resource_type_specific": "EEG Dataset",
   "modalities": [
     "eeg"
   ],
-  "resource_type_specific": "EEG Dataset",
   "sizes": [
     "644.8 MB (86 files)"
   ],
@@ -56,31 +81,6 @@
     ".vhdr",
     ".vmrk",
     ".yml"
-  ],
-  "description": "This multimodal dataset comprises simultaneous EEG and eye-tracking recordings from 21 healthy participants performing a matrix-based brain-computer interface spelling task. EEG data were acquired using a 24-channel dry electrode system at 300 Hz, while eye movements were recorded at 60 Hz using a portable eye tracker. The dataset includes calibration and copy-spelling task data with event markers for target and non-target stimulus presentations, providing a resource for investigating sensor fusion approaches in EEG-based BCI typing systems.",
-  "methods_description": "EEG data were collected using a DSI-24 dry electrode cap (Wearable Sensing) at 300 Hz sampling rate with a bandwidth of 0.003–150 Hz from 13 electrode locations with linked-ear reference. Eye-tracking data were acquired using a Tobii Pro Nano eye tracker at 60 Hz. Participants performed a single-character-presentation matrix paradigm with 100 calibration inquiries (10 letters each at 4 Hz presentation rate). Stimuli were presented in white on black background with red fixation crosses. Timing fidelity was verified using the Matrix Time Test Task with photodiode validation (±10 ms tolerance).",
-  "keywords": [
-    {
-      "term": "EEG"
-    },
-    {
-      "term": "brain-computer interfaces"
-    },
-    {
-      "term": "eye tracking"
-    },
-    {
-      "term": "multimodal sensor fusion"
-    },
-    {
-      "term": "P300"
-    },
-    {
-      "term": "spelling task"
-    },
-    {
-      "term": "motor imagery"
-    }
   ],
   "source_hash": "f0fb882efb5e82b60b81f1d8624f7d3dd205c772ec0dedf7c993965521249e7b"
 }
