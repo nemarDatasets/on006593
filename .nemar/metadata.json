@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "cBCI Matrix Multimodal Dataset",
-  "description": "This dataset comprises simultaneous EEG and eye-tracking recordings from 21 participants performing a matrix-based brain-computer interface (BCI) typing task using a single-character-presentation paradigm. Data were collected at Northeastern University in 2023 using the BciPy software platform, including calibration and copy-spelling sessions with event markers for target and non-target stimuli. The dataset supports research on multimodal sensor fusion for EEG-based BCI typing systems.",
-  "methods_description": "EEG data were collected using a DSI-24 dry electrode cap (Wearable Sensing) at 300 Hz sampling rate, with electrodes at Fp1/2, Fz, F3/4, F7/8, Cz, C3/4, T7/T8, T3/T4, Pz, P3/P4, P7/P8, T5/T6, O1/2, referenced to linked ears (A1/A2). Eye-tracking data were collected using a Tobii Pro Nano at 60 Hz. The matrix paradigm and data acquisition were managed with BciPy software. Calibration tasks presented letters at 4 Hz across 100 inquiries of 10 letters each (1 target, 9 non-target), with timing verified via a photodiode and Matrix Time Test Task.",
+  "description": "This dataset contains simultaneous EEG and eye-tracking recordings from 21 healthy participants performing a matrix-based single-character-presentation BCI spelling task. Calibration and copy-spelling sessions include event markers for target and non-target stimuli. It supports research on multimodal sensor fusion for EEG-based brain-computer interface typing systems.",
+  "methods_description": "EEG was recorded with a 24-channel DSI-24 dry electrode system (Wearable Sensing) at 300 Hz with linked-ear reference. Eye movements were recorded with a Tobii Pro Nano at 60 Hz. The matrix paradigm was run with BciPy, presenting letters at 4 Hz in inquiries of 10 letters (1 target, 9 non-target) after a target prompt and fixation. Trigger timing was verified with a photodiode.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -18,22 +18,19 @@
       "term": "EEG"
     },
     {
-      "term": "Eye-Tracking"
+      "term": "eye tracking"
     },
     {
-      "term": "Brain-Computer Interface"
+      "term": "brain-computer interface"
     },
     {
-      "term": "BCI typing"
+      "term": "matrix speller"
     },
     {
       "term": "sensor fusion"
     },
     {
-      "term": "matrix paradigm"
-    },
-    {
-      "term": "single-character-presentation"
+      "term": "BciPy"
     }
   ],
   "related_identifiers": [
@@ -70,7 +67,7 @@
     "eeg"
   ],
   "sizes": [
-    "644.8 MB (86 files)"
+    "615 MB (86 files)"
   ],
   "formats": [
     ".eeg",
